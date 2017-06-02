@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Pagina principal, First Way">
-    <meta name="author" content="Martin Ivan Rios">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>First Way</title>
+    <title>Clean Blog - Contact</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +55,7 @@
                         <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="about.html">Sobre nosotros</a>
+                        <a href="about.html">Sobre Nosotros</a>
                     </li>
                     <li>
                         <a href="post.html">Publicaciones</a>
@@ -72,14 +72,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/cordoba-background.jpg')">
+    <header class="intro-header" style="background-image: url('img/traslasierra.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>First Way</h1>
+                    <div class="page-heading">
+                        <h1>Contacto</h1>
                         <hr class="small">
-                        <span class="subheading">Empresa dedicada y apasionada al turismo</span>
+                        <span class="subheading">Alguna pergunta? Podemos responderla.</span>
                     </div>
                 </div>
             </div>
@@ -90,57 +90,47 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Córdoba, Argentina
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Un lugar para no aburrirse...
-                        </h3>
-                    </a>
-                    <p class="post-meta">Enviado por <a href="#">Martín Iván Ríos</a> el 1 de Junio, 2017</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Traslasierra logra una síntesis magistral entre el paisaje y el espíritu serrano.
-                        </h2>
-                    </a>
-                    <p class="post-meta">Enviado por <a href="#">Martín Iván Ríos</a> el 1 de Junio, 2017</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Punilla
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Con hermosos balnearios, playas y paradores, preferidos por los turistas durante el verano.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Enviado por <a href="#">Martín Iván Ríos</a> el 1 de Junio, 2017</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Mar Chiquita
-                        </h2>
-                        <h3 class="post-subtitle">
-                            A la vera de la laguna, se pueden contemplar hermosos flamencos rosados, gaviotas, patos y otras especies de ambientes acuáticos.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Enviado por <a href="#">Martín Iván Ríos</a> el 1 de Junio, 2017</p>
-                </div>
-                <hr>
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Publicaciónes Antiguas &rarr;</a>
-                    </li>
-                </ul>
+                <p>Quieres contactarnos? Llena las casillas debajo para enviarnos un mensaje y trataremos de responderte lo antes posible.</p>
+                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor, coloque su nombre.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Dirección de correo</label>
+                            <input type="email" class="form-control" placeholder="Dirección de correo" id="email" required data-validation-required-message="Por favor, coloque su dirección de correo.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Número de teléfono</label>
+                            <input type="tel" class="form-control" placeholder="Número de teléfono" id="phone" required data-validation-required-message="Por favor, coloque su número de teléfono.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Mensaje</label>
+                            <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor, coloque su mensaje."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
